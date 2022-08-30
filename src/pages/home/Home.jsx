@@ -1,13 +1,7 @@
 import './Home.scss'
 
-const Home = () => {
+export const Home = () => {
   return (
-    <div className='home'>
-        <h1 className='title'>
-            Lama dev
-        </h1>
-    </div>
+    <div>Home</div>
   )
 }
-
-export default Home
