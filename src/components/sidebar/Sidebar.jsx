@@ -11,30 +11,39 @@ import HelpCenterOutlinedIcon from '@mui/icons-material/HelpCenterOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
     <div className='sidebar'>
         <div className='top'>
+        <Link to='/' style={{textDecoration:"none"}}>
             <span className='logo'>Lamaadmin</span>
+        </Link>
         </div>
         <hr />
         <div className='center'>
             <ul>
                 <p className='title'>MAIN</p>
-                <li>
-                    <DashboardIcon className='icon'/>
-                    <span>Dashboard</span>
-                </li>
+                <Link to='/' style={{textDecoration:"none"}}>
+                    <li>
+                        <DashboardIcon className='icon'/>
+                        <span>Dashboard</span>
+                    </li>
+                </Link>
                 <p className='title'>LISTS</p>
-                <li>
-                    <PersonOutlineOutlinedIcon className='icon'/>
-                    <span>Users</span>
-                </li>
-                <li>
-                    <ProductionQuantityLimitsIcon className='icon'/>
-                    <span>Products</span>
-                </li>
+                <Link to='/users' style={{textDecoration:"none"}}>
+                    <li>
+                        <PersonOutlineOutlinedIcon className='icon'/>
+                        <span>Users</span>
+                    </li>
+                </Link>
+                <Link to='/products' style={{textDecoration:"none"}}>
+                    <li>
+                        <ProductionQuantityLimitsIcon className='icon'/>
+                        <span>Products</span>
+                    </li>
+                </Link>
                 <li>
                     <LocalOfferIcon className='icon'/>
                     <span>Others</span>
