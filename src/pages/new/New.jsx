@@ -2,6 +2,7 @@ import './New.scss'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Navbar from '../../components/navbar/Navbar'
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
+import {useState} from 'react'
 
 function New({inputs, title}) {
 
